@@ -11,7 +11,7 @@ After this start Docker Desktop and clone git repository
 
 ```bash
 git clone https://github.com/TNTU-121-Software-Engineering/FIS-SE-SPs-42-Yaroslav-Lapovets-bachelor-thesis.git
-cd AutoService
+cd FIS-SE-SPs-42-Yaroslav-Lapovets-bachelor-thesis
 ```
 And start Docker
 
