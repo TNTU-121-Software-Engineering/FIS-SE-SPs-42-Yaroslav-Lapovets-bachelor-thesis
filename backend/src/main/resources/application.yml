@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: backend
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+server:
+  servlet:
+    context-path: /api
+
+app:
+  jwt:
+    key:
+      9bT4d5zF7J8k5Ns8mK0d7P5fK9T6r8bZ7P2h6N7p3Q1s6R5u4G4b8Y3v5T3w7X9y
+    expiration:
+      6000000
+
+  cors:
+    allowed-origins: http://localhost:3000
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    # org.hibernate.SQL: DEBUG
