@@ -1,0 +1,1 @@
+# FIS-SE-SPs-42-Yaroslav-Lapovets-bachelor-thesis
