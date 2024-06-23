@@ -1,6 +1,6 @@
 # AutoService
 
-Created as Bachelor Thesis in Ternopil Ivan Puluj National Technical University. "Development of a website for a autoservice using Spring Framework". Bachelor Thesis presentation in Ukrainian: [PDF](https://github.com/TNTU-121-Software-Engineering/FIS-SE-SPs-42-Yaroslav-Lapovets-bachelor-thesis/docs/Презентація.pdf).
+Created as Bachelor Thesis in Ternopil Ivan Puluj National Technical University. "Development of a website for a autoservice using Spring Framework". Bachelor Thesis presentation in Ukrainian: [PDF](docs/Презентація.pdf).
 
 ## Installation
 
