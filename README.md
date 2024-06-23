@@ -20,59 +20,6 @@ docker-compose up
 ```
 
 
-Or you can just use only Docker Hub
-
-Move to directory and create docker-compose.yaml file
-
-```bash
-cd C:\path\to\your\directory
-notepad docker-compose.yaml
-```
-add this text to docker-compose.yaml
-```bash
-services:
-  frontend:
-    image: zeiron/autoservice-frontend:v1
-    ports:
-      - "3000:3000" # Map frontend container port to host port
-    depends_on:
-      - backend
-
-  backend:
-    image: zeiron/autoservice-backend:v1
-    ports:
-      - "8080:8080" # Map backend container port to host port
-    environment:
-      SPRING_PROFILES_ACTIVE: prod
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/autoservice
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: admin
-    depends_on:
-      - db
-
-  db:
-    image: zeiron/custom-postgres:v1
-    environment:
-      POSTGRES_DB: autoservice
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: admin
-    ports:
-      - "5432:5432"
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
-
-volumes:
-  postgres-data:
-```
-
-After saving document write command in console
-
-```bash
-docker-compose up
-```
-Docker download a images from my Docker Hub repository
-
-
 ## Usage
 
 After starting project open browser and follow the [link](localhost:3000)
@@ -117,15 +64,17 @@ Require a token to access
 - --
 
 ### Used technologies
-- Java 20
-- SpringBoot
-- SpringBoot Data JPA
-- SpringBoot Security
-- JWT
-- HTML
-- CSS
-- JS
-- React
-- PostgreSQL
-- Maven
-- Docker
+- Java 22.0.1
+- SpringBoot 2.7.3
+- SpringBoot Web 2.7.3
+- SpringBoot Data JPA 2.7.3
+- SpringBoot Security 2.7.3
+- JWT(jjwt) 0.9.1
+- HTML 5
+- CSS 3
+- JS 22.3.0
+- React 18.3.1
+- Lombok 1.18.30
+- PostgreSQL 42.4.1
+- Apache Maven 3.8.6
+- Docker 26.1.1
